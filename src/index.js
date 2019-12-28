@@ -1,26 +1,29 @@
 import React from 'react'
 import styled from 'styled-components/native'
 
-import { StatusBar } from 'react-native'
+import { StatusBar, SafeAreaView, StyleSheet } from 'react-native'
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
 
-import AppNavigator from './routes'
+import '~/config/ReactotronConfig';
 
-import { color } from './helpers/colors'
+import Routes from '~/routes';
 
+import { nbColor } from '~/helpers/colors'
 
-export default function App() {
-    return (
-        <>
-          <StatusBar translucent backgroundColor={color.primary} />
-          <Container >
-            <AppNavigator />
-          </Container>
-        </>
-    )
-}
+const App = () => (
+    <>
+        <StatusBar barStyle='light-content' translucent backgroundColor='transparent'  />
+        <Container>
+            <Routes />
+        </Container>
+    </>
+);
 
 const Container = styled.SafeAreaView`
   flex: 1;
-  margin-top: ${getStatusBarHeight()}px;
+  background: ${nbColor.primary};
+  padding: ${getStatusBarHeight()}px 0;
 `
+
+
+export default App;

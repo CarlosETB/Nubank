@@ -1,4 +1,4 @@
-export const color = {
-    primary: '#F4A460'
+export const nbColor = {
+    primary: '#8b10ae'
 }
   
