@@ -8,5 +8,5 @@ Clone da interface do Nubank
 <!-- PROJECT LOGO -->
 
 <p align="center">
-    <img height="250px" src="https://logodownload.org/wp-content/uploads/2019/08/nubank-logo-11.png" alt="Logo">
+    <img height="200px" src="https://logodownload.org/wp-content/uploads/2019/08/nubank-logo-11.png" alt="Logo">
 </p>
